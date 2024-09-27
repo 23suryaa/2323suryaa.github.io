@@ -17,6 +17,8 @@
             text-align: center;
             min-height: 100vh;
             color: #333;
+            position: relative;
+            overflow: auto;
         }
         .content {
             max-width: 800px;
@@ -26,16 +28,19 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+            margin-top: 20px;
         }
         h1 {
-            color: #63b3ed;
+            color: #00b7ff;
             font-size: 2.5em;
             margin-bottom: 10px;
             animation: fadeIn 2s ease-in-out;
-            text-shadow: 0 0 10px rgba(99, 179, 237, 0.8);
+            text-shadow: 0 0 10px rgba(0, 183, 255, 0.8);
         }
         h2 {
-            color: #2c3e50;
+            color: #999999;
             font-size: 1.8em;
             margin-bottom: 10px;
         }
@@ -48,18 +53,18 @@
         img {
             max-width: 100%;
             height: auto;
-            border: 4px solid #63b3ed;
+            border: 4px solid #00b7ff;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 20px;
-            box-shadow: 0 0 15px rgba(99, 179, 237, 0.3);
+            box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
         }
         img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(99, 179, 237, 0.8);
+            box-shadow: 0 0 30px rgba(0, 183, 255, 0.8);
         }
         a {
-            color: #63b3ed;
+            color: #00b7ff;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -67,6 +72,21 @@
         a:hover {
             color: #91d5f3;
             text-shadow: 0 0 10px rgba(145, 213, 243, 0.8);
+        }
+        .stripes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(0, 183, 255, 0.4),
+                rgba(0, 183, 255, 0.4) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            z-index: 1;
         }
         @keyframes fadeIn {
             from {
@@ -79,6 +99,8 @@
     </style>
 </head>
 <body>
+
+    <div class="stripes"></div>
 
     <div class="content">
         <h1>My Passion for Soccer</h1>
@@ -93,4 +115,8 @@
 
         <img src="https://23suryaa.github.io/2323suryaa.github.io/team.jpeg" alt="My soccer team">
 
-        <p><a href="https://www.fifa.com/" target="_blank">Learn more about soccer at FIFA</a
+        <p><a href="https://www.fifa.com/" target="_blank">Learn more about soccer at FIFA</a></p>
+    </div>
+
+</body>
+</html>

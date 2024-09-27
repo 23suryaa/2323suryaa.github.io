@@ -7,19 +7,35 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #eef7fc;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #2a9d8f;
+            color: #63b3ed;
             font-size: 2.5em;
-            text-align: center;
             margin-bottom: 10px;
             animation: fadeIn 2s ease-in-out;
+            text-shadow: 0 0 10px rgba(99, 179, 237, 0.8);
         }
         h2 {
-            color: #264653;
+            color: #2c3e50;
             font-size: 1.8em;
             margin-bottom: 10px;
         }
@@ -27,29 +43,30 @@
             font-size: 1.1em;
             line-height: 1.6em;
             margin-bottom: 20px;
-            color: #333;
+            color: #555;
         }
         img {
             max-width: 100%;
             height: auto;
-            border: 4px solid #264653;
+            border: 4px solid #63b3ed;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: block;
-            margin: 0 auto 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(99, 179, 237, 0.3);
         }
         img:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 30px rgba(99, 179, 237, 0.8);
         }
         a {
-            color: #e76f51;
+            color: #63b3ed;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
         a:hover {
-            color: #f4a261;
+            color: #91d5f3;
+            text-shadow: 0 0 10px rgba(145, 213, 243, 0.8);
         }
         @keyframes fadeIn {
             from {
@@ -63,19 +80,17 @@
 </head>
 <body>
 
-    <h1>My Passion for Soccer</h1>
+    <div class="content">
+        <h1>My Passion for Soccer</h1>
     
-    <h2>Why I Love Soccer</h2>
-    <p>Soccer is the sport that I grew up playing. I started at a very young age, and it has always been a big part of my life. It is exciting, fun, and keeps me active.</p>
+        <h2>Why I Love Soccer</h2>
+        <p>Soccer is the sport that I grew up playing. I started at a very young age, and it has always been a big part of my life. It is exciting, fun, and keeps me active.</p>
 
-    <img src="https://23suryaa.github.io/2323suryaa.github.io/young.jpeg" alt="Me playing soccer when I was young">
+        <img src="https://23suryaa.github.io/2323suryaa.github.io/young.jpeg" alt="Me playing soccer when I was young">
 
-    <h2>Team Spirit</h2>
-    <p>Playing soccer has taught me the importance of teamwork. Whether I’m practicing or competing, working with my team is the key to success.</p>
+        <h2>Team Spirit</h2>
+        <p>Playing soccer has taught me the importance of teamwork. Whether I’m practicing or competing, working with my team is the key to success.</p>
 
-     <img src="https://23suryaa.github.io/2323suryaa.github.io/team.jpeg" alt="My soccer team">
+        <img src="https://23suryaa.github.io/2323suryaa.github.io/team.jpeg" alt="My soccer team">
 
-    <p><a href="https://www.fifa.com/" target="_blank">Learn more about soccer at FIFA</a></p>
-
-</body>
-</html>
+        <p><a href="https://www.fifa.com/" target="_blank">Learn more about soccer at FIFA</a
